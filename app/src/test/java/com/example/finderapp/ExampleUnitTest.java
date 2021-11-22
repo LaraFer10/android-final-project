@@ -1,4 +1,4 @@
-package com.example.rastreioapp;
+package com.example.finderapp;
 
 import org.junit.Test;
 
