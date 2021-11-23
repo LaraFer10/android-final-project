@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         this.orderServices = new OrderServices();
-
+        setTheme(R.style.Theme_FinderApp);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
