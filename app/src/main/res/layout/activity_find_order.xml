@@ -5,12 +5,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FindOrderActivity">
+
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="414dp"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:background="#7165E3"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        tools:ignore="MissingConstraints">
+        android:gravity="center"
+        android:text="Finder"
+        android:textColor="#fff"
+        android:textSize="50px"
+        android:fontFamily="@font/sansbold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="37dp">
 
     </TextView>
+
+    <TextView
+        android:id="@+id/txtRastrear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rastrear Encomenda"
+        android:layout_marginLeft="50px"
+        tools:ignore="MissingConstraints"
+        android:textSize="60px"
+        android:fontFamily="@font/sansbold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        android:id="@+id/editCodigo"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:hint="Digite o codigo de rastreio"
+        android:textSize="30px"
+        app:layout_constraintTop_toBottomOf="@+id/txtRastrear"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btnPesquisar"
+        android:layout_width="260px"
+        android:layout_height="100px"
+        android:layout_marginRight="40px"
+        android:text="Pesquisar"
+        android:textSize="30px"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/editCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/txtRastrear"></Button>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPesquisar"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,6 @@ public class FindOrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_order);
 
-        correiosServices.getPackageList("LX002249507BR");
+        //correiosServices.getPackageList("LX002249507BR");
     }
 }
