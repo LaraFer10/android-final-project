@@ -1,4 +1,4 @@
-package br.ucsal.finderapp;
+package com.example.finderapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 

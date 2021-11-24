@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
         <activity
-            android:name="br.ucsal.finderapp.Cadastro"
+            android:name=".Cadastro"
             android:exported="true" />
         <activity
-            android:name="br.ucsal.finderapp.Login"
+            android:name=".Login"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
