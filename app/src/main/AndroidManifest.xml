@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
         <activity
+            android:name="br.ucsal.finderapp.Cadastro"
+            android:exported="true" />
+        <activity
+            android:name="br.ucsal.finderapp.Login"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
