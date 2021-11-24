@@ -3,8 +3,6 @@ package com.example.finderapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.WindowManager;
-import com.example.finderapp.R;
 
 public class Login extends AppCompatActivity {
 
