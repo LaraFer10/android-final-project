@@ -10,10 +10,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.finderapp.R;
+import com.example.finderapp.dao.UserDAO;
 import com.example.finderapp.models.User;
+
+import java.sql.SQLException;
 
 public class Cadastro extends AppCompatActivity {
     private EditText nome, senha, email, confirmSenha;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +31,15 @@ public class Cadastro extends AppCompatActivity {
         confirmSenha = (EditText) findViewById(R.id.confirmSenha);
     }
 
-    public void cadastrar(View view) {
+    public void cadastrar(View view) throws SQLException {
         if (senha.getText().toString().equals(confirmSenha.getText().toString())) {
             User u = pegarUsuario();
             if (u.getEmail().equals("") && u.getName().equals("") && u.getPassword().equals("")){
                 Toast.makeText(getApplicationContext(),"Alguns campos estão vazios",
                         Toast.LENGTH_SHORT).show();
             } else {
-                //TODO adicionar no banco de dados
+                //A principio deve esstar adicionando banco de dados agora.
+                UserDAO.addUser(u);
                 //TODO logar no sistema
                 //TODO trocar activity para tela principal
             }
