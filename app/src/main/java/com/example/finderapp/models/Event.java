@@ -1,13 +1,24 @@
 package com.example.finderapp.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Event {
+    @JsonProperty("data")
     private String date;
+
+    @JsonProperty("hora")
     private String hour;
+
+    @JsonProperty("local")
     private String local;
+
+    @JsonProperty("status")
     private String status;
+
+    @JsonProperty("subStatus")
     private List<String> subStatus;
 
     public Event() {

@@ -44,8 +44,9 @@ public class RastreioAdapter extends BaseAdapter {
         TextView date = view.findViewById(R.id.text2);
         TextView status = view.findViewById(R.id.text3);
 
+        title.setText(event.getStatus());
         date.setText(event.getDate() + " - " + event.getHour());
-        status.setText(event.getStatus() + " - " + event.getLocal());
+        status.setText(event.getSubStatus().get(0));
 
         return view;
     }

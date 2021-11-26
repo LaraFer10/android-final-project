@@ -1,12 +1,22 @@
 package com.example.finderapp.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Order {
+public class Order implements Serializable {
+    @JsonProperty("codigo")
     private String code;
+
+    @JsonProperty("servico")
     private String service;
+
+    @JsonProperty("quantidade")
     private int quantity;
+
+    @JsonProperty("eventos")
     private List<Event> events;
 
     public Order() {

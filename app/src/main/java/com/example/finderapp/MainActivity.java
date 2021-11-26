@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void GetLoginActivity() {
-        Intent intent = new Intent(this, Login.class);
+        Intent intent = new Intent(this, FindOrderActivity.class);
         startActivity(intent);
         finish();
     }

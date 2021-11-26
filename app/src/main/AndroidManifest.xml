@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
         <activity
+            android:name=".FindOrderActivity"
+            android:exported="true" />
+        <activity
             android:name=".Cadastro"
             android:exported="true" />
         <activity
