@@ -13,7 +13,7 @@ public class ConnectionPG {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(URL,USER,PASSWORD);
         }catch (Exception e){
-            //TODO mandar esta mensagem para tela
+
             e.printStackTrace();
         }
         return connection;
